@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="static/css/style1.css">
+	<link rel="stylesheet" type="text/css" href="static/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="static/css/ionicons.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<script src="static/js/javascript.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home Page</title>
+</head>
+<body>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<header class="header">
+	<img src="img/apple_logo.png" id="apple_logo">
+	<nav >
+		<p id="logo-text"><a href="#">Apple</a></p>
+		<ul id="main-nav">
+			<li><a href="index1.html">Home</a></li>
+			<li>
+				<div class="dropdown">
+
+                <button class="dropbtn">Menu 
+                 <i class="icon-sort-down"></i>
+                </button>
+
+                 <div class="dropdown-content">
+                   <a href="#">iPhone</a>
+                   <a href="#">iPad</a>
+                   <a href="#">Mac</a>
+                   <a href="#">Apple Watch</a>
+                   <a href="#">AirPods</a>
+                   <a href="#">Accessories</a>
+                 </div>
+
+                </div> 
+            </li>
+			<li><a href="#">About</a></li>
+			<li><a href="index2.html">Order Online</a></li>
+			<li><a href="#">регистрация</a></li>
+			<li><a href="#">выйти</a></li>
+			<li><a href="#">войти</a></li>
+		</ul>
+	
+	</nav>
+
+{% block content %}
+{% endblock %}
+
+	<footer>
+		<div class="footer-bottom">
+				Copiright &copy; Apple 2020. All rights reserved.
+			</div>
+	</footer>
+	
+
+</body>
+</html>
